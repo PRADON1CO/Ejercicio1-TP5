@@ -58,13 +58,15 @@
     </nav>
   </header>
   <main class="my-5 container-fluid">
-    <div class="container">
+    <section class="container">
         <h1>Adivina el número</h1>
-        <button class="btn btn-primary">Comenzar el juego</button>
-        <p>Ingresa un número entre 1 y 100:</p>
-        <input type="number" id="guessInput" class="form-control mb-2" min="1" max="100">
-        <button id="submitBtn" class="btn btn-primary">Enviar</button>
-      </div>
+        <button id="btnInicio" class="btn btn-primary">Comenzar el juego</button>
+        <div id="iniciar" class="d-none pt-2">
+          <p>Ingresa un número entre 1 y 100:</p> 
+          <input type="number" id="input" class="form-control mb-2" min="1" max="100">
+          <button id="enviar" class="btn btn-primary">Enviar</button>
+        </div>   
+      </section>
   </main>
   <footer class="text-center py-3 bg-primary-subtle">
     <p>&copy; Todos los derechos estan reservados</p>
